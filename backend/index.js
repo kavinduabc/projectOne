@@ -1,13 +1,18 @@
 import express from "express"
 import mongoose from "mongoose"
 import bodyParser from "body-parser"
+import dotenv from "dotenv"
 
 
 let app = express()
+
+//** env file */
+dotenv.config();
+
 app.use(bodyParser.json)
 
 //** create a database connection */
-let mongoUrl ="mongodb+srv://admin:root@cluster0.irp44.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+let mongoUrl = process.env.DATABASEURL;
 mongoose.connect(mongoUrl)
 let connection = mongoose.connection
 
