@@ -2,6 +2,7 @@ import express from "express"
 import mongoose from "mongoose"
 import bodyParser from "body-parser"
 import dotenv from "dotenv"
+import userRouter from "./routes/userRoute.js"
 
 
 let app = express()
@@ -19,6 +20,9 @@ let connection = mongoose.connection
 connection.once("open",()=>{
     console.log("MongoDB connnection is successfully")
 })
+
+//** Routting  */
+app.use("/api/user",userRouter)
 
 
 //** port */
