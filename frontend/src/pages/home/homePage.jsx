@@ -10,7 +10,7 @@ export default function HomePage(){
     return(
         <div>
             <Header/>
-            <div className="h-[calc(100vh-100px)] w-full bg-slate-400">
+            <div className="h-[calc(100vh-100px)] w-full bg-slate-200">
             <Routes path='/*'>
             <Route path="/" element={<Home/>}/>
             <Route path="/contact" element={<Contact/>}/>
