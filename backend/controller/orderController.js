@@ -51,5 +51,6 @@ const deleteOrder = async (req, res) => {
 module.exports = {
     createOrder,
     getOrdersByEmail,
-    getAllOrders
+    getAllOrders,
+    deleteOrder
  };
