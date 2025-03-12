@@ -48,6 +48,24 @@ const deleteOrder = async (req, res) => {
     }
 }
 
+const updateOrder = async (req, res) => {
+    try {
+        const {id} = req.params;
+        const { status } = req.body;
+        const updatedOrder = await Order.findByIdAndUpdate(
+            id, 
+            { status }, 
+            {new: true});
+        res.status(200).send({
+            message:"Order updated successfully",
+            order: updatedOrder
+        });
+    } catch(error) {
+        res.status(500).send({message:"Failed to update the order"});
+    }
+}
+
+
 module.exports = {
     createOrder,
     getOrdersByEmail,
