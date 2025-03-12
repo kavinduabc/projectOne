@@ -23,6 +23,15 @@ const getOrdersByEmail = async (req, res) => {
     }
 };
 
+const getAllOrders = async (req, res) => {
+    try {
+        const orders = await Order.find();
+        res.status(200).json(orders);
+    } catch (error) {
+        res.status(500).json({ message: "Failed to fetch orders" });
+    }
+};
+
 module.exports = {
     createOrder,
     getOrdersByEmail
