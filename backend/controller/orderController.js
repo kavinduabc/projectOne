@@ -36,6 +36,9 @@ const deleteOrder = async (req, res) => {
     try {
         const {id} = req.params;
         const deletedOrder = await Order.findByIdAndDelete(id);
+        if(!deletedOrder){
+            res.status(404).send({message:"Order Not Found"});
+        }
         res.status(200).send({
             message:"Order deleted successfully",
             order: deletedOrder
