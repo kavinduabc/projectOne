@@ -73,5 +73,6 @@ module.exports = {
     createOrder,
     getOrdersByEmail,
     getAllOrders,
-    deleteOrder
+    deleteOrder,
+    updateOrder
  };
