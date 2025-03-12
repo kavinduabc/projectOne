@@ -34,5 +34,6 @@ const getAllOrders = async (req, res) => {
 
 module.exports = {
     createOrder,
-    getOrdersByEmail
+    getOrdersByEmail,
+    getAllOrders
  };
