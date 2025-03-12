@@ -56,6 +56,16 @@ export  function loginUser(req,res){
                         firstName : user.firstName,
                         lastName : user.lastName,
                         email : user.email,
+                        phone : user.password
+                    },process.env.SECRET_KEY)
+
+                    res.json({
+                        message : "Login is successfully", token : token
+                    });
+                }
+                else{
+                    res.status(404).json({
+                        error :"Login Faild"
                     })
                 }
             }

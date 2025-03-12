@@ -18,9 +18,19 @@ app.use((req,res,next)=>{
 
     if(token){
         token = token.replace("Bearer","");
+
+        jwt.verify(token, process.env.SECRET_KEY,(err, decoded)=>{
+           if(err){
+            console.error("JWT verification Failed",err.message);
+           }
+           else{
+            req.user = decoded;
+           }
+        })
          
     
     }
+    next();
 })
 
 //** create a database connection */
