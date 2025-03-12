@@ -56,6 +56,9 @@ const updateOrder = async (req, res) => {
             id, 
             { status }, 
             {new: true});
+        if(!updatedOrder){
+            res.status(404).send({message:"Order Not Found"});
+        }
         res.status(200).send({
             message:"Order updated successfully",
             order: updatedOrder
