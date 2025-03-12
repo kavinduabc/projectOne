@@ -32,6 +32,19 @@ const getAllOrders = async (req, res) => {
     }
 };
 
+const deleteOrder = async (req, res) => {
+    try {
+        const {id} = req.params;
+        const deletedOrder = await Order.findByIdAndDelete(id);
+        res.status(200).send({
+            message:"Order deleted successfully",
+            order: deletedOrder
+        });
+    } catch(error) {
+        res.status(500).send({message:"Failed to delete the order"});
+    }
+}
+
 module.exports = {
     createOrder,
     getOrdersByEmail,
