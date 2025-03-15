@@ -5,6 +5,7 @@ import Items from "./items";
 import Login from "./login";
 import Home from "./home";
 import ErrorNotFound from "./error";
+import Footer from "../../components/footer";
 
 export default function HomePage(){
     return(
@@ -18,6 +19,7 @@ export default function HomePage(){
             <Route path="/login" element={<Login/>}/>
             <Route path="/*" element={<ErrorNotFound/>}/>
             </Routes>
+            <Footer/>
             </div>
         </div>
     )

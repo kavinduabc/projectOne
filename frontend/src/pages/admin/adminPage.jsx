@@ -7,8 +7,8 @@ import { Link, Route, Routes } from "react-router-dom";
 export default function AdminPage() {
   return (
     <div className="w-full min-h-screen flex bg-slate-200 text-black">
-      {/* Sidebar */}
-      <div className="w-[300px] h-screen bg-slate-200 p-4 flex flex-col gap-4 shadow-lg fixed">
+      
+      <div className="w-[300px] h-screen bg-slate-200 p-4 flex flex-col gap-4 shadow-lg ">
         <button className="w-full h-[50px] text-[20px] font-bold flex items-center gap-2 p-2 hover:bg-gray-300 rounded-lg">
           <BsGraphDown className="text-xl" />
           Dashboard
@@ -33,7 +33,7 @@ export default function AdminPage() {
         </button>
       </div>
 
-      {/* Main Content */}
+     
       <div className="w-[calc(100vw-300px)] bg-white p-6">
         <Routes>
           <Route path="/booking" element={<h1 className="text-3xl font-bold">Booking</h1>} />
