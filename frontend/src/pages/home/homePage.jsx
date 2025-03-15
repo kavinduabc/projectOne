@@ -8,6 +8,7 @@ import ErrorNotFound from "./error";
 import Footer from "../../components/footer";
 import Service from "./service";
 
+
 export default function HomePage(){
     return(
         <div>

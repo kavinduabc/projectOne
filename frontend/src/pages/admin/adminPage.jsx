@@ -6,22 +6,22 @@ export default function AdminPage() {
       
       {/* Sidebar with right border */}
       <div className="w-[300px] h-screen bg-white p-4 flex flex-col gap-4 shadow-lg border-r border-gray-400">
-        <button className="w-full h-[50px] text-[20px] font-bold flex items-center gap-2 p-2 hover:bg-gray-300 rounded-lg">
+        <button className="w-full h-[50px] text-[20px] font-bold flex items-center gap-2 p-2 hover:bg-gray-300 rounded-lg border border-gray-300">
           Dashboard
         </button>
         <Link
           to="/admin/booking"
-          className="w-full h-[50px] text-[20px] font-bold flex items-center gap-2 p-2 hover:bg-gray-300 rounded-lg"
+          className="w-full h-[50px] text-[20px] font-bold flex items-center gap-2 p-2 hover:bg-gray-300 rounded-lg border border-gray-300"
         >
           Bookings
         </Link>
         <Link
           to="/admin/items"
-          className="w-full h-[50px] text-[20px] font-bold flex items-center gap-2 p-2 hover:bg-gray-300 rounded-lg"
+          className="w-full h-[50px] text-[20px] font-bold flex items-center gap-2 p-2 hover:bg-gray-300 rounded-lg border border-gray-300"
         >
           Items
         </Link>
-        <button className="w-full h-[50px] text-[20px] font-bold flex items-center gap-2 p-2 hover:bg-gray-300 rounded-lg">
+        <button className="w-full h-[50px] text-[20px] font-bold flex items-center gap-2 p-2 hover:bg-gray-300 rounded-lg border border-gray-300">
           Users
         </button>
       </div>
@@ -36,3 +36,4 @@ export default function AdminPage() {
     </div>
   );
 }
+
