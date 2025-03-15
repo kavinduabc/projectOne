@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react"; // Import arrow icon
+import { ArrowLeft } from "lucide-react"; 
 
 export default function ErrorNotFound() {
     return (
@@ -12,7 +12,7 @@ export default function ErrorNotFound() {
                 </p>
                 <Link 
                     to="/" 
-                    className="inline-flex items-center justify-center px-6 py-3 bg-gray-700 my-6 text-white rounded-lg hover:bg-blue-600 transition-colors duration-200"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-gray-700 my-6 text-white rounded-lg transition-colors duration-200"
                 >
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back to Home
