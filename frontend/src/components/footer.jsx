@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="w-full py-8 bg-gray-800 text-white shadow-xl">
+    <footer className="w-full py-8 bg-gray-800 text-white shadow-xl mt-auto">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 text-center px-6 gap-12"> 
         {/* Increased gap-12 for better spacing */}
         
@@ -21,8 +21,7 @@ export default function Footer() {
             <Link to="/" className="text-sm hover:text-gray-400 transition">Home</Link>
             <Link to="/contact" className="text-sm hover:text-gray-400 transition">Contact</Link>
             <Link to="/items" className="text-sm hover:text-gray-400 transition">Items</Link>
-            <Link to="/services" className="text-sm hover:text-gray-400 transition">Services</Link>
-            <Link to="/privacy" className="text-sm hover:text-gray-400 transition">Privacy Policy</Link>
+            <Link to="/service" className="text-sm hover:text-gray-400 transition">Service</Link>
           </div>
         </div>
 

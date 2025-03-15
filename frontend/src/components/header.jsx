@@ -14,6 +14,9 @@ export default function Header() {
         <Link to="/items" className="text-[15px] font-bold hover:text-gray-500">
           ITEMS
         </Link>
+        <Link to="/sevice" className="text-[15px] font-bold hover:text-gray-500">
+          SERVICE
+        </Link>
         <Link to="/login" className="text-[15px] font-bold hover:text-gray-500">
           LOGIN
         </Link>

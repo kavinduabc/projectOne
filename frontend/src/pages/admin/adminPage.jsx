@@ -33,7 +33,7 @@ export default function AdminPage() {
         </button>
       </div>
 
-     
+      
       <div className="w-[calc(100vw-300px)] bg-white p-6">
         <Routes>
           <Route path="/booking" element={<h1 className="text-3xl font-bold">Booking</h1>} />
