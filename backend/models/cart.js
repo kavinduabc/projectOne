@@ -20,3 +20,7 @@ const cartSchema = new Schema({
         required: true,
     }
 });
+
+// Create Cart model
+const Carts = mongoose.model("Cart", cartSchema);
+
