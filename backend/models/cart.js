@@ -9,7 +9,8 @@ const cartSchema = new Schema({
         trim: true,
         required: true,
         minlength: 3
-    }
+    },
+    item: String,
     }
 });
 
