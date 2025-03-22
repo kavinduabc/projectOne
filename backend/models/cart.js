@@ -11,6 +11,7 @@ const cartSchema = new Schema({
         minlength: 3
     },
     item: String,
+    image: String
     }
 });
 
