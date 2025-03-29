@@ -1,9 +1,8 @@
-import Banner from "../../components/banner/banner";
-
+import BannerSlider from "../../components/Banner"
 export default function Home(){
     return(
         <div>
-            <Banner/>
+             <BannerSlider />
         </div>
     )
 }
