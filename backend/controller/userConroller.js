@@ -75,3 +75,33 @@ export  function loginUser(req,res){
 
 
 }
+
+//** check user role admin */
+export function isItAdmin(req){
+
+    // variable for 
+    let isAdmin = false;
+
+    if(req.user != null){
+        if(req.user.role == "admin")
+        {
+            isAdmin = true;
+        }
+    }
+    return isAdmin;
+}
+
+//** check user role is customer */
+export function isItUser(req){
+
+    let isCustomer = false;
+
+    if(req.user != null)
+    {
+        if(req.user.role == "customer")
+        {
+            isCustomer = true;
+        }
+    }
+    return isCustomer;
+}
